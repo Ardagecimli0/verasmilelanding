@@ -62,12 +62,7 @@ export default function TestimonialsSection() {
     };
   }, [emblaApi, onSelect]);
 
-  const scrollToForm = () => {
-    const element = document.querySelector('#contact-form');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
 
   return (
     <section id="testimonials" className="bg-primary py-12">
@@ -170,8 +165,8 @@ export default function TestimonialsSection() {
                   key={index}
                   onClick={() => scrollTo(index)}
                   className={`w-2.5 h-2.5 rounded-full transition-colors ${index === selectedIndex
-                      ? 'bg-white'
-                      : 'bg-white/40 hover:bg-white/60'
+                    ? 'bg-white'
+                    : 'bg-white/40 hover:bg-white/60'
                     }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
@@ -264,7 +259,7 @@ export default function TestimonialsSection() {
             Ready To Get Started?
           </h3>
           <Button
-            onClick={scrollToForm}
+            onClick={() => window.open('https://api.whatsapp.com/send?phone=905494755287&text=What are the options and pricing for dental treatment', '_blank')}
             className="bg-secondary hover:bg-secondary-dark text-white px-6 py-3 rounded-lg font-medium group transition-all duration-200"
           >
             <ChevronRight className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />

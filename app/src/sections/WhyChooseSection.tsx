@@ -35,12 +35,7 @@ const itemVariants = {
 };
 
 export default function WhyChooseSection() {
-  const scrollToForm = () => {
-    const element = document.querySelector('#contact-form');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
 
   return (
     <section id="why-us" className="container mx-auto px-4 py-12">
@@ -88,7 +83,7 @@ export default function WhyChooseSection() {
 
         <div className="flex justify-center">
           <Button
-            onClick={scrollToForm}
+            onClick={() => window.open('https://api.whatsapp.com/send?phone=905494755287&text=What are the options and pricing for dental treatment', '_blank')}
             className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium group transition-all duration-200"
           >
             <ChevronRight className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />

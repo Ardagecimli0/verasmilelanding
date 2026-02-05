@@ -3,12 +3,7 @@ import { ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function HeroSection() {
-  const scrollToForm = () => {
-    const element = document.querySelector('#contact-form');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
 
   return (
     <section id="home" className="container mx-auto px-4 pt-6">
@@ -41,7 +36,7 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <Button
-                onClick={scrollToForm}
+                onClick={() => window.open('https://api.whatsapp.com/send?phone=905494755287&text=What are the options and pricing for dental treatment', '_blank')}
                 className="bg-secondary hover:bg-secondary-dark text-white px-6 py-6 rounded-lg text-base font-medium group transition-all duration-200"
               >
                 <ChevronRight className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />

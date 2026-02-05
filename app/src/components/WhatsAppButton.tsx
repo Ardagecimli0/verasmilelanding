@@ -10,8 +10,7 @@ export default function WhatsAppButton({ phoneNumber }: WhatsAppButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenChat = () => {
-    const cleanNumber = phoneNumber.replace(/\D/g, '');
-    window.open(`https://wa.me/${cleanNumber}`, '_blank');
+    window.open('https://api.whatsapp.com/send?phone=905494755287&text=What are the options and pricing for dental treatment', '_blank');
   };
 
   return (
@@ -54,8 +53,13 @@ export default function WhatsAppButton({ phoneNumber }: WhatsAppButtonProps) {
               <div className="bg-[#075E54] px-4 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   {/* Logo */}
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center overflow-hidden">
-                    <span className="text-white text-xl font-light">V</span>
+                  {/* Logo */}
+                  <div className="w-10 h-10 flex items-center justify-center">
+                    <img
+                      src="/images/logo-cevredent.png"
+                      alt="CevreDent"
+                      className="w-full h-auto object-contain brightness-0 invert"
+                    />
                   </div>
                   <div>
                     <h4 className="text-white font-semibold text-sm">CevreDent</h4>

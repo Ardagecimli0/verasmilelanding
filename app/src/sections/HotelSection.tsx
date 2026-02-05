@@ -22,7 +22,7 @@ export default function HotelSection() {
 
           <p className="text-gray-600 leading-relaxed">
             It's normal to feel anxious when considering dental treatment abroad, but with
-            CevreDemt Clinic's professional and caring medical team just know that you're in safe
+            CevreDent Clinic's professional and caring medical team just know that you're in safe
             hands!
           </p>
 
@@ -31,8 +31,8 @@ export default function HotelSection() {
             like home and a dedicated team ensuring your comfort every step of the way.
           </p>
 
-          <p className="text-accent font-medium leading-relaxed">
-            Let us turn your dream smile into reality—stress-free and in the heart of the
+          <p className="text-blue-400 text-xl md:text-2xl font-semibold leading-relaxed">
+            Let us turn your dream smile into reality stress free and in the heart of the
             beautiful city Istanbul!
           </p>
         </motion.div>

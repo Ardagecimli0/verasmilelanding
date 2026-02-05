@@ -26,14 +26,14 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex items-center justify-center md:justify-end gap-2 text-gray-300">
-                <MapPin className="w-4 h-4 text-primary" />
+                <MapPin className="w-4 h-4 text-primary shrink-0" />
                 <span className="text-sm">
-                  Kordonboyu, Turgut Özal Blv. No: 47 Kartal/İstanbul
+                  Mecidiyeköy Mahallesi, Büyükdere Cd. Ocak Apt No:91 Kat 2 Daire:2, 34387 Şişli/İstanbul
                 </span>
               </div>
               <div className="flex items-center justify-center md:justify-end gap-2 text-gray-300">
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="text-sm">+90 (850) 600 00 90</span>
+                <span className="text-sm">+90 549 475 52 87</span>
               </div>
               <div className="flex items-center justify-center md:justify-end gap-2 text-gray-300">
                 <Mail className="w-4 h-4 text-primary" />

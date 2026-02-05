@@ -34,7 +34,7 @@ export default function Header() {
 
         <div className="relative flex items-center justify-between h-16 md:h-24">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2 absolute left-1/2 -translate-x-1/2 lg:static lg:transform-none lg:left-0">
+          <a href="#home" className="flex items-center gap-2 absolute left-1/2 -translate-x-1/2 -ml-3 lg:ml-0 lg:static lg:transform-none lg:left-0">
             <img
               src="/images/logo-cevredent.png"
               alt="CevreDent Logo"
