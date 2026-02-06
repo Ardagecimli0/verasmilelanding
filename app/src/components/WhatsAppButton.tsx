@@ -6,7 +6,7 @@ interface WhatsAppButtonProps {
   phoneNumber: string;
 }
 
-export default function WhatsAppButton({ phoneNumber }: WhatsAppButtonProps) {
+export default function WhatsAppButton({ phoneNumber: _phoneNumber }: WhatsAppButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenChat = () => {
