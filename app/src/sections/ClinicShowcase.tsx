@@ -1,12 +1,10 @@
 import { motion } from 'framer-motion';
+
 const clinicImages = [
-  {
-    image: '/images/clinic-exterior.webp',
-  },
-  {
-    image: '/images/clinic-interior.webp',
-  },
+  { image: '/images/clinic-exterior.webp' },
+  { image: '/images/clinic-interior.webp' },
 ];
+
 export default function ClinicShowcase() {
   return (
     <section className="container mx-auto px-4 py-12">
@@ -15,7 +13,8 @@ export default function ClinicShowcase() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-50px' }}
         transition={{ duration: 0.5 }}
-        className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"
+        // Mobilde 1 sütun, tablette 2 sütun. Boşluğu (gap) mobilde artırabilirsin.
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 max-w-full md:max-w-4xl mx-auto"
       >
         {clinicImages.map((item, index) => (
           <motion.div
@@ -30,7 +29,9 @@ export default function ClinicShowcase() {
             <img
               src={item.image}
               alt="VeraSmile Clinic"
-              className="w-full aspect-[4/3] object-cover"
+              // aspect-square: Mobilde kare yaparak daha büyük görünmesini sağlar
+              // md:aspect-[4/3]: Masaüstünde orijinal oranına döner
+              className="w-full aspect-square md:aspect-[4/3] object-cover"
             />
           </motion.div>
         ))}
