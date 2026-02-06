@@ -47,7 +47,7 @@ export default function WhyChooseSection() {
         className="bg-secondary rounded-3xl p-6 md:p-12"
       >
         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-10">
-          Here's Why You Should Choose CevreDent!
+          Here's Why You Should Choose VeraSmile!
         </h2>
 
         {/* Mobile: 2 columns, Desktop: 7 columns */}

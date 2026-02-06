@@ -36,8 +36,8 @@ export default function Header() {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 absolute left-1/2 -translate-x-1/2 -ml-3 lg:ml-0 lg:static lg:transform-none lg:left-0">
             <img
-              src="/images/logo-cevredent.png"
-              alt="CevreDent Logo"
+              src="/images/logo.png"
+              alt="VeraSmile Logo"
               className="h-10 md:h-12 w-auto"
             />
           </a>

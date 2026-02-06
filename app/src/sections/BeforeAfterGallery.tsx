@@ -5,11 +5,12 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const galleryItems = [
-  { image: '/images/ba-1.png', title: 'Dental Implants', country: 'GB' },
-  { image: '/images/ba-2.png', title: 'Dental Veneers', country: 'AU' },
-  { image: '/images/ba-3.png', title: 'Smile Designs', country: 'GB' },
-  { image: '/images/ba-4.png', title: 'Dental Zirconium', country: 'TR' },
-  { image: '/images/ba-5.png', title: 'Smile Designs', country: 'US' },
+  { image: '/images/1-copy-1.webp', title: 'Dental Implants', country: 'GB' },
+  { image: '/images/2-copy-1 (1).webp', title: 'Dental Veneers', country: 'AU' },
+  { image: '/images/3-copy-1 (1).webp', title: 'Smile Designs', country: 'GB' },
+  { image: '/images/4-copy-1.webp', title: 'Dental Zirconium', country: 'TR' },
+  { image: '/images/5-1.webp', title: 'Smile Makeover', country: 'US' },
+  { image: '/images/6-1.webp', title: 'Hollywood Smile', country: 'AU' },
 ];
 
 const countryFlags: Record<string, string> = {
@@ -106,8 +107,8 @@ export default function BeforeAfterGallery() {
                 key={index}
                 onClick={() => scrollTo(index)}
                 className={`w-2.5 h-2.5 rounded-full transition-colors ${index === selectedIndex
-                    ? 'bg-secondary'
-                    : 'bg-gray-300 hover:bg-gray-400'
+                  ? 'bg-secondary'
+                  : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                 aria-label={`Go to slide ${index + 1}`}
               />

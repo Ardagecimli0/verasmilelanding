@@ -4,11 +4,11 @@ const clinicImages = [
   {
     image: '/images/clinic-exterior.png',
     text: 'Our high-tech hospital is centrally located in Istanbul with a stunning seafront view!',
-    subtext: 'CevreDent is part of Cevre Clinic Medical Center!',
+    subtext: 'VeraSmile is part of Cevre Clinic Medical Center!',
   },
   {
     image: '/images/clinic-interior.png',
-    text: 'Experience the difference at CevreDent Dental Clinic where your smile matters!',
+    text: 'Experience the difference at VeraSmile Dental Clinic where your smile matters!',
     subtext: '',
   },
 ];

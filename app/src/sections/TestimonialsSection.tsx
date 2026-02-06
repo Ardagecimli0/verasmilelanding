@@ -9,14 +9,14 @@ const testimonials = [
   {
     image: '/images/testimonial-1.png',
     quote: 'From hiding to smiling brightly.',
-    name: '',
-    location: '',
+    name: 'Sarah J.',
+    location: 'from UK',
   },
   {
     image: '/images/testimonial-2.png',
-    quote: '',
-    name: '',
-    location: '',
+    quote: 'The best dental experience I\'ve ever had. Highly recommended!',
+    name: 'Michael K.',
+    location: 'from Germany',
   },
   {
     image: '/images/testimonial-3.png',

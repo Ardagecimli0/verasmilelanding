@@ -22,7 +22,7 @@ export default function HotelSection() {
 
           <p className="text-gray-600 leading-relaxed">
             It's normal to feel anxious when considering dental treatment abroad, but with
-            CevreDent Clinic's professional and caring medical team just know that you're in safe
+            VeraSmile Clinic's professional and caring medical team just know that you're in safe
             hands!
           </p>
 

@@ -56,13 +56,13 @@ export default function WhatsAppButton({ phoneNumber: _phoneNumber }: WhatsAppBu
                   {/* Logo */}
                   <div className="w-10 h-10 flex items-center justify-center">
                     <img
-                      src="/images/logo-cevredent.png"
-                      alt="CevreDent"
+                      src="/images/logo.png"
+                      alt="VeraSmile"
                       className="w-full h-auto object-contain brightness-0 invert"
                     />
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold text-sm">CevreDent</h4>
+                    <h4 className="text-white font-semibold text-sm">VeraSmile</h4>
                     <div className="flex items-center gap-1.5">
                       <span className="w-2 h-2 bg-[#25D366] rounded-full"></span>
                       <span className="text-white/80 text-xs">Online</span>
@@ -93,7 +93,7 @@ export default function WhatsAppButton({ phoneNumber: _phoneNumber }: WhatsAppBu
                   className="bg-[#DCF8C6] rounded-lg rounded-tl-none p-4 shadow-sm max-w-[280px]"
                 >
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    Welcome to  CevreDent Clinic! 😊
+                    Welcome to  VeraSmile Clinic! 😊
                   </p>
                   <p className="text-gray-800 text-sm leading-relaxed mt-2">
                     Have questions about our services, packages, or how to get started?
@@ -117,7 +117,7 @@ export default function WhatsAppButton({ phoneNumber: _phoneNumber }: WhatsAppBu
                 </motion.button>
 
                 <p className="text-center text-gray-400 text-xs mt-3">
-                  © 2025 CevreDent
+                  © 2025 VeraSmile
                 </p>
               </div>
             </motion.div>

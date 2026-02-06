@@ -15,9 +15,9 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <img
-              src="/images/logo-cevredent.png"
-              alt="CevreDent Logo"
-              className="h-10 md:h-12 w-auto brightness-0 invert"
+              src="/images/footer.svg"
+              alt="VeraSmile Logo"
+              className="h-16 md:h-20 w-auto"
             />
           </div>
 
@@ -37,7 +37,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center justify-center md:justify-end gap-2 text-gray-300">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-sm">info@cevredent.com</span>
+                <span className="text-sm">info@verasmile.com</span>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Footer() {
           className="mt-10 pt-6 border-t border-white/10 text-center"
         >
           <p className="text-gray-400 text-sm">
-            Copyright@2026 CevreDent
+            Copyright@2026 VeraSmile
           </p>
         </motion.div>
       </div>

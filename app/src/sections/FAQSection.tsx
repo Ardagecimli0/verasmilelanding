@@ -8,9 +8,9 @@ import {
 
 const faqItems = [
   {
-    question: 'Why Choose CevreDent?',
+    question: 'Why Choose VeraSmile?',
     answer:
-      "At CevreDent, patient comfort and satisfaction come first. Our modern clinic offers cutting-edge technology and personalized treatments. With expert international consultants fluent in 8+ languages, we ensure seamless communication. We also assist with travel, accommodations, and airport transfers for a stress-free experience, allowing patients to explore Istanbul between appointments with full support.",
+      "At VeraSmile, patient comfort and satisfaction come first. Our modern clinic offers cutting-edge technology and personalized treatments. With expert international consultants fluent in 8+ languages, we ensure seamless communication. We also assist with travel, accommodations, and airport transfers for a stress-free experience, allowing patients to explore Istanbul between appointments with full support.",
   },
   {
     question: 'Why Are Dental Treatments Cheaper in Turkey?',

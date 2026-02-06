@@ -63,7 +63,7 @@ export default function ContactForm() {
       <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-6">
         Shape Your Smile
         <br />
-        with CevreDent
+        with VeraSmile
       </h3>
 
       <form onSubmit={handleSubmit} className="space-y-4">
