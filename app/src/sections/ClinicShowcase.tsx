@@ -27,15 +27,8 @@ export default function ClinicShowcase() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.15 }}
             whileHover={{ scale: 1.02 }}
-            className="relative rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
+            className="rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
           >
-            {/* Top text overlay */}
-            <div className="absolute top-0 left-0 right-0 z-10 p-4 text-center bg-gradient-to-b from-black/50 to-transparent">
-              <p className="text-white text-sm md:text-base font-medium leading-relaxed drop-shadow-lg">
-                {item.text}
-              </p>
-            </div>
-
             <img
               src={item.image}
               alt="VeraSmile Clinic"
