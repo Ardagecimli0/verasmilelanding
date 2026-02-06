@@ -15,7 +15,7 @@ export default function ClinicShowcase() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-50px' }}
         transition={{ duration: 0.5 }}
-        className="grid md:grid-cols-2 gap-6"
+        className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"
       >
         {clinicImages.map((item, index) => (
           <motion.div

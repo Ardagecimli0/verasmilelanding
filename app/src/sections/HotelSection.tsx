@@ -12,26 +12,60 @@ export default function HotelSection() {
           transition={{ duration: 0.5 }}
           className="space-y-4"
         >
-          <h3 className="text-primary text-lg font-medium">
-            Getting Dental Treatment Abroad is a Big Decision!
+          <h3
+            className="text-blue-400 text-2xl md:text-3xl font-[inherit]"
+            style={{
+              fontFamily:
+                '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+            }}
+          >
+            Getting Dental Treatment
+            <br />
+            Abroad is a Big Decision!
           </h3>
 
-          <h2 className="text-2xl md:text-3xl font-bold text-secondary">
-            Stay at Turkey's Most Luxurious Hotel!
+          <h2
+            className="text-2xl md:text-3xl font-bold text-secondary"
+            style={{
+              fontFamily:
+                '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+            }}
+          >
+            Stay at Turkey's
+            <br />
+            Most Luxurious Hotel!
           </h2>
 
-          <p className="text-gray-600 leading-relaxed">
+          <p
+            className="text-secondary leading-relaxed"
+            style={{
+              fontFamily:
+                '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+            }}
+          >
             It's normal to feel anxious when considering dental treatment abroad, but with
             VeraSmile Clinic's professional and caring medical team just know that you're in safe
             hands!
           </p>
 
-          <p className="text-gray-600 leading-relaxed">
+          <p
+            className="text-secondary leading-relaxed"
+            style={{
+              fontFamily:
+                '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+            }}
+          >
             Enjoy a seamless experience with world-class dental care, a luxury stay that feels
             like home and a dedicated team ensuring your comfort every step of the way.
           </p>
 
-          <p className="text-blue-400 text-xl md:text-2xl font-semibold leading-relaxed">
+          <p
+            className="text-blue-400 text-xl md:text-2xl font-semibold leading-relaxed"
+            style={{
+              fontFamily:
+                '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+            }}
+          >
             Let us turn your dream smile into reality stress free and in the heart of the
             beautiful city Istanbul!
           </p>
