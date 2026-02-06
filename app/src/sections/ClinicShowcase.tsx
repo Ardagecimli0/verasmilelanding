@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
 
 const clinicImages = [
-  { image: '/images/clinic-exterior.webp' },
-  { image: '/images/clinic-interior.webp' },
+  {
+    image: '/images/clinic-exterior.webp',
+  },
+  {
+    image: '/images/clinic-interior.webp',
+  },
 ];
 
 export default function ClinicShowcase() {
@@ -13,8 +17,8 @@ export default function ClinicShowcase() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-50px' }}
         transition={{ duration: 0.5 }}
-        // Mobilde 1 sütun, tablette 2 sütun. Boşluğu (gap) mobilde artırabilirsin.
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 max-w-full md:max-w-4xl mx-auto"
+        // max-w-5xl ve gap korundu, böylece boyut küçülmedi
+        className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto"
       >
         {clinicImages.map((item, index) => (
           <motion.div
@@ -24,15 +28,17 @@ export default function ClinicShowcase() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.15 }}
             whileHover={{ scale: 1.02 }}
-            className="rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
+            // bg-gradient ve padding'ler kaldırıldı, sadece görsel kaldı
+            className="relative rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
           >
-            <img
-              src={item.image}
-              alt="VeraSmile Clinic"
-              // aspect-square: Mobilde kare yaparak daha büyük görünmesini sağlar
-              // md:aspect-[4/3]: Masaüstünde orijinal oranına döner
-              className="w-full aspect-square md:aspect-[4/3] object-cover"
-            />
+            <div className="relative">
+              <img
+                src={item.image}
+                alt="VeraSmile Clinic"
+                // Boyutu korumak için aspect-square (kare) yapısı bırakıldı
+                className="w-full aspect-square object-cover"
+              />
+            </div>
           </motion.div>
         ))}
       </motion.div>

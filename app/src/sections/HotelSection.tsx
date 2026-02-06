@@ -13,7 +13,7 @@ export default function HotelSection() {
           className="space-y-4"
         >
           <h3
-            className="text-blue-400 text-2xl md:text-3xl font-[inherit]"
+            className="text-blue-400 text-3xl md:text-4xl font-[inherit]"
             style={{
               fontFamily:
                 '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
@@ -25,7 +25,7 @@ export default function HotelSection() {
           </h3>
 
           <h2
-            className="text-2xl md:text-3xl font-bold text-secondary"
+            className="text-3xl md:text-4xl font-bold text-secondary"
             style={{
               fontFamily:
                 '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
