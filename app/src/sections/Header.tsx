@@ -36,7 +36,7 @@ export default function Header() {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 absolute left-1/2 -translate-x-1/2 -ml-3 lg:ml-0 lg:static lg:transform-none lg:left-0">
             <img
-              src="/images/logo.png"
+              src="/images/logo.svg"
               alt="VeraSmile Logo"
               className="h-10 md:h-12 w-auto"
             />
@@ -48,7 +48,7 @@ export default function Header() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="relative text-sm font-medium text-gray-700 hover:text-primary transition-colors duration-200 group"
+                className="relative text-sm font-semibold text-gray-700 hover:text-primary transition-colors duration-200 group"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full" />
@@ -69,7 +69,7 @@ export default function Header() {
                   <button
                     key={item.href}
                     onClick={() => scrollToSection(item.href)}
-                    className="text-lg font-medium text-gray-700 hover:text-primary transition-colors text-left"
+                    className="text-lg font-semibold text-gray-700 hover:text-primary transition-colors text-left"
                   >
                     {item.label}
                   </button>

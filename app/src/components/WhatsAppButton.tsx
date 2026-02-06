@@ -52,15 +52,6 @@ export default function WhatsAppButton({ phoneNumber: _phoneNumber }: WhatsAppBu
               {/* Header */}
               <div className="bg-[#075E54] px-4 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  {/* Logo */}
-                  {/* Logo */}
-                  <div className="w-10 h-10 flex items-center justify-center">
-                    <img
-                      src="/images/logo.png"
-                      alt="VeraSmile"
-                      className="w-full h-auto object-contain brightness-0 invert"
-                    />
-                  </div>
                   <div>
                     <h4 className="text-white font-semibold text-sm">VeraSmile</h4>
                     <div className="flex items-center gap-1.5">

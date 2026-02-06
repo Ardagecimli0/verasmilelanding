@@ -11,18 +11,21 @@ const testimonials = [
     quote: 'From hiding to smiling brightly.',
     name: 'Sarah J.',
     location: 'from UK',
+    videoUrl: 'https://www.youtube.com/watch?v=JTN9W_dHwKg',
   },
   {
     image: '/images/testimonial-2.png',
     quote: 'The best dental experience I\'ve ever had. Highly recommended!',
     name: 'Michael K.',
     location: 'from Germany',
+    videoUrl: 'https://www.youtube.com/watch?v=3j3nvvEm9c8',
   },
   {
     image: '/images/testimonial-3.png',
     quote: 'Goodbye expensive dental care!',
     name: 'Alberto',
     location: 'from USA',
+    videoUrl: 'https://www.youtube.com/watch?v=5PgnNsTeSKM',
   },
 ];
 
@@ -96,15 +99,13 @@ export default function TestimonialsSection() {
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.3 }}
                     className="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer aspect-[3/4]"
+                    onClick={() => window.open(testimonial.videoUrl, '_blank')}
                   >
                     <img
                       src={testimonial.image}
                       alt={testimonial.name || 'Patient testimonial'}
                       className="w-full h-full object-cover"
                     />
-
-                    {/* Overlay gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
                     {/* Play button */}
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -115,27 +116,6 @@ export default function TestimonialsSection() {
                         <Play className="w-7 h-7 text-secondary ml-1" fill="currentColor" />
                       </motion.div>
                     </div>
-
-                    {/* Quote text */}
-                    {(testimonial.quote || testimonial.name) && (
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        {testimonial.quote && (
-                          <p className="text-white text-sm font-medium text-center mb-1">
-                            {testimonial.quote}
-                          </p>
-                        )}
-                        {testimonial.name && (
-                          <p className="text-white/90 text-xs text-center">
-                            <span className="text-primary-light font-medium">
-                              {testimonial.name}
-                            </span>{' '}
-                            {testimonial.location && (
-                              <span className="text-white/70">{testimonial.location}</span>
-                            )}
-                          </p>
-                        )}
-                      </div>
-                    )}
 
                     {/* Logo watermark */}
                     <div className="absolute top-4 left-4">
@@ -197,15 +177,13 @@ export default function TestimonialsSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer aspect-[3/4]"
+              onClick={() => window.open(testimonial.videoUrl, '_blank')}
             >
               <img
                 src={testimonial.image}
                 alt={testimonial.name || 'Patient testimonial'}
                 className="w-full h-full object-cover"
               />
-
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
               {/* Play button */}
               <div className="absolute inset-0 flex items-center justify-center">
@@ -216,27 +194,6 @@ export default function TestimonialsSection() {
                   <Play className="w-7 h-7 text-secondary ml-1" fill="currentColor" />
                 </motion.div>
               </div>
-
-              {/* Quote text */}
-              {(testimonial.quote || testimonial.name) && (
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  {testimonial.quote && (
-                    <p className="text-white text-sm font-medium text-center mb-1">
-                      {testimonial.quote}
-                    </p>
-                  )}
-                  {testimonial.name && (
-                    <p className="text-white/90 text-xs text-center">
-                      <span className="text-primary-light font-medium">
-                        {testimonial.name}
-                      </span>{' '}
-                      {testimonial.location && (
-                        <span className="text-white/70">{testimonial.location}</span>
-                      )}
-                    </p>
-                  )}
-                </div>
-              )}
 
               {/* Logo watermark */}
               <div className="absolute top-4 left-4">

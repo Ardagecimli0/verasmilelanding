@@ -2,14 +2,10 @@ import { motion } from 'framer-motion';
 
 const clinicImages = [
   {
-    image: '/images/clinic-exterior.png',
-    text: 'Our high-tech hospital is centrally located in Istanbul with a stunning seafront view!',
-    subtext: 'VeraSmile is part of Cevre Clinic Medical Center!',
+    image: '/images/clinic-exterior.webp',
   },
   {
-    image: '/images/clinic-interior.png',
-    text: 'Experience the difference at VeraSmile Dental Clinic where your smile matters!',
-    subtext: '',
+    image: '/images/clinic-interior.webp',
   },
 ];
 
@@ -31,24 +27,20 @@ export default function ClinicShowcase() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.15 }}
             whileHover={{ scale: 1.02 }}
-            className="relative rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 group"
+            className="relative rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
           >
-            <img
-              src={item.image}
-              alt={item.text}
-              className="w-full aspect-[4/3] object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-              <p className="text-white text-sm md:text-base font-medium text-center leading-relaxed">
+            {/* Top text overlay */}
+            <div className="absolute top-0 left-0 right-0 z-10 p-4 text-center bg-gradient-to-b from-black/50 to-transparent">
+              <p className="text-white text-sm md:text-base font-medium leading-relaxed drop-shadow-lg">
                 {item.text}
               </p>
-              {item.subtext && (
-                <p className="text-white/80 text-xs text-center mt-2">
-                  {item.subtext}
-                </p>
-              )}
             </div>
+
+            <img
+              src={item.image}
+              alt="VeraSmile Clinic"
+              className="w-full aspect-[4/5] md:aspect-[16/9] object-cover"
+            />
           </motion.div>
         ))}
       </motion.div>

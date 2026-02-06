@@ -2,13 +2,13 @@ import { motion } from 'framer-motion';
 
 const doctors = [
   {
-    image: '/images/dentist-mumin.png',
+    image: '/images/dr-mumin-1.webp',
     name: 'Dt. Mümin Manassra',
     description:
       'Dr. Manassra, a 2017 graduate of Atatürk University, is a highly skilled dentist with seven years of expertise.\n\nRecognized among Turkey\'s top dentists, Dt. Manassra ensures that his patients receive exceptional dental care and high levels of satisfaction.',
   },
   {
-    image: '/images/dentist-nurlan.png',
+    image: '/images/dr-nurlan-copy-1.webp',
     name: 'Dt. Nurlan Gasimov',
     description:
       'Dt. Nurlan Gasimov who graduated from Azerbaijan Medical University, Faculty of Dentistry in 2011, has 12 years of professional experience.\n\nAfter working as a specialist in Baku, he travelled to Turkey in 2017 and has been practicing here ever since.',
