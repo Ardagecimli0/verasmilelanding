@@ -1,0 +1,186 @@
+{
+    "header": {
+        "nav": {
+            "home": "Home",
+            "whyUs": "Why Us",
+            "beforeAfter": "Before & After",
+            "ourDoctors": "Our Doctors",
+            "testimonials": "Testimonials",
+            "faq": "FAQ"
+        }
+    },
+    "hero": {
+        "titlePrimary": "Save Up to 70%",
+        "titleSecondary": "on Your Perfect Smile in Turkey!",
+        "ctaButton": "Get A Free Consultation",
+        "imageAlt": "Happy couple with perfect smiles"
+    },
+    "servicesBar": {
+        "implants": "Implants",
+        "veneers": "Veneers",
+        "smileDesign": "Smile Design",
+        "crowns": "Crowns"
+    },
+    "features": {
+        "title": "Your All-in-One",
+        "titleLine2": "Dental Solution",
+        "dentalTreatmentGuarantee": "Dental Treatment Guarantee",
+        "premiumQualityDentalCare": "Premium Quality Dental Care",
+        "expertConsultations": "Expert Consultations",
+        "vipTransferServices": "VIP Transfer Services",
+        "luxuryHotelStay": "A 5-Star Luxury Hotel Stay"
+    },
+    "contactForm": {
+        "title": "Shape Your Smile",
+        "titleLine2": "with VeraSmile",
+        "fullNameLabel": "Full Name",
+        "emailLabel": "Email",
+        "phoneLabel": "Phone number",
+        "messageLabel": "Message",
+        "submitButton": "Submit",
+        "submitting": "Submitting...",
+        "submitted": "Submitted!"
+    },
+    "whyChoose": {
+        "title": "Here's Why You Should Choose VeraSmile!",
+        "modernClinic": "Modern Clinic",
+        "europeanAmericanBrands": "European &\nAmerican\nMaterial Brands",
+        "noWaitingLine": "No Waiting\nLine",
+        "awardsCertificates": "Awards\nISO / Certificates",
+        "globalPatientsSatisfaction": "Global Patients\nwith 99%\nSatisfaction Rate",
+        "experiencedDoctors": "Experienced\nDoctors",
+        "guaranteeProgram": "Guarantee\nProgram\n(5Y Veneers/Crowns\n20Y Implants)",
+        "ctaButton": "Get A Free Consultation"
+    },
+    "beforeAfter": {
+        "dentalImplants": "Dental Implants",
+        "dentalVeneers": "Dental Veneers",
+        "smileDesigns": "Smile Designs",
+        "dentalZirconium": "Dental Zirconium",
+        "smileMakeover": "Smile Makeover",
+        "hollywoodSmile": "Hollywood Smile",
+        "previousSlide": "Previous slide",
+        "nextSlide": "Next slide",
+        "goToSlide": "Go to slide"
+    },
+    "doctors": {
+        "title": "Our Expert Dentist",
+        "drMumin": {
+            "name": "Dt. Mümin Manassra",
+            "description": "Dr. Manassra, a 2017 graduate of Atatürk University, is a highly skilled dentist with seven years of expertise.\n\nRecognized among Turkey's top dentists, Dt. Manassra ensures that his patients receive exceptional dental care and high levels of satisfaction."
+        },
+        "drNurlan": {
+            "name": "Dt. Nurlan Gasimov",
+            "description": "Dt. Nurlan Gasimov who graduated from Azerbaijan Medical University, Faculty of Dentistry in 2011, has 12 years of professional experience.\n\nAfter working as a specialist in Baku, he travelled to Turkey in 2017 and has been practicing here ever since."
+        }
+    },
+    "clinicShowcase": {
+        "clinicAlt": "VeraSmile Clinic"
+    },
+    "testimonials": {
+        "title": "What Our Patients Say About Us",
+        "previousTestimonial": "Previous testimonial",
+        "nextTestimonial": "Next testimonial",
+        "goToTestimonial": "Go to testimonial",
+        "readyToGetStarted": "Ready To Get Started?",
+        "ctaButton": "Get A Free Consultation",
+        "quotes": {
+            "sarahJ": "From hiding to smiling brightly.",
+            "michaelK": "The best dental experience I've ever had. Highly recommended!",
+            "alberto": "Goodbye expensive dental care!"
+        },
+        "locations": {
+            "fromUK": "from UK",
+            "fromGermany": "from Germany",
+            "fromUSA": "from USA"
+        }
+    },
+    "hotel": {
+        "titleLine1": "Getting Dental Treatment",
+        "titleLine2": "Abroad is a Big Decision!",
+        "subtitleLine1": "Stay at Turkey's",
+        "subtitleLine2": "Most Luxurious Hotel!",
+        "description1": "It's normal to feel anxious when considering dental treatment abroad, but with VeraSmile Clinic's professional and caring medical team just know that you're in safe hands!",
+        "description2": "Enjoy a seamless experience with world-class dental care, a luxury stay that feels like home and a dedicated team ensuring your comfort every step of the way.",
+        "callToAction": "Let us turn your dream smile into reality stress free and in the heart of the beautiful city Istanbul!",
+        "hotelName": "Istanbul MILORD",
+        "hotelLabel": "Hotel",
+        "safeTourism": "SAFE",
+        "tourism": "TOURISM",
+        "imageAlt": "Elite World Grand Hotel Istanbul"
+    },
+    "cta": {
+        "title": "Ready To Get Started?",
+        "subtitle": "Discover the Power of a Confident Smile!",
+        "button": "Plan My Journey!"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "clinicImageAlt": "Vera Clinic Exterior",
+        "questions": {
+            "whyChooseVerasmile": {
+                "question": "Why Choose VeraSmile?",
+                "answer": "At VeraSmile, patient comfort and satisfaction come first. Our modern clinic offers cutting-edge technology and personalized treatments. With expert international consultants fluent in 8+ languages, we ensure seamless communication. We also assist with travel, accommodations, and airport transfers for a stress-free experience, allowing patients to explore Istanbul between appointments with full support."
+            },
+            "whyCheaperInTurkey": {
+                "question": "Why Are Dental Treatments Cheaper in Turkey?",
+                "answer": "Lower costs stem from favorable exchange rates and Turkey's lower cost of living. Foreign patients benefit from significant savings, as medical services for international visitors are exempt from VAT. This ensures high-quality care at a fraction of the price found in Europe and the U.S."
+            },
+            "whyDentalCrowns": {
+                "question": "Why Get Dental Crowns in Turkey?",
+                "answer": "Turkey offers world-class dental crowns at affordable prices. Our clinics use premium materials from European and American brands, ensuring durability and aesthetics. With experienced dentists and modern facilities, you receive the same quality as in Western countries at a much lower cost."
+            },
+            "hollywoodSmileProcess": {
+                "question": "What Is the Process for a Hollywood Smile?",
+                "answer": "Your journey starts with a consultation to design your ideal smile and address any dental issues. We resolve underlying problems before beginning cosmetic work. Our expert team customizes each plan, ensuring a flawless, natural-looking result."
+            },
+            "lowerCostLowerQuality": {
+                "question": "Does Lower Cost Mean Lower Quality for Veneers?",
+                "answer": "No. Lower prices in Turkey don't compromise quality. Materials, technology, and expertise match those in the U.S., UK, and Europe, ensuring premium veneers at affordable rates."
+            },
+            "allOnFourCandidate": {
+                "question": "Am I a Candidate for All-on-4 Implants?",
+                "answer": "Most patients qualify, even those unsuitable for traditional implants. Since the entire set of teeth is replaced at once, implants are placed where bone is strongest. If you have four strong bone areas in your jaw, you're a candidate!"
+            }
+        }
+    },
+    "footer": {
+        "contactUs": "Contact Us",
+        "address": "Mecidiyeköy Mahallesi, Büyükdere Cd. Ocak Apt No:91 Kat 2 Daire:2, 34387 Şişli/İstanbul",
+        "phone": "+90 549 475 52 87",
+        "email": "info@verasmile.com",
+        "copyright": "Copyright@2026 VeraSmile",
+        "logoAlt": "VeraSmile Logo"
+    },
+    "whatsapp": {
+        "companyName": "VeraSmile",
+        "online": "Online",
+        "welcomeMessage": "Welcome to VeraSmile Clinic! 😊",
+        "questionsMessage": "Have questions about our services, packages, or how to get started?",
+        "hereToHelp": "We're here to help",
+        "sendMessage": "send us a message!",
+        "copyright": "© 2025 VeraSmile"
+    },
+    "countries": {
+        "TR": "Turkey (Türkiye)",
+        "US": "United States",
+        "GB": "United Kingdom",
+        "DE": "Germany",
+        "FR": "France",
+        "IT": "Italy",
+        "ES": "Spain",
+        "NL": "Netherlands",
+        "BE": "Belgium",
+        "CH": "Switzerland",
+        "AT": "Austria",
+        "SE": "Sweden",
+        "NO": "Norway",
+        "DK": "Denmark",
+        "FI": "Finland",
+        "AU": "Australia",
+        "CA": "Canada",
+        "RU": "Russia",
+        "UA": "Ukraine",
+        "PL": "Poland"
+    }
+}

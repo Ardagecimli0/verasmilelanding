@@ -3,24 +3,42 @@ import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import { useTranslations } from '@/i18n';
 
 const galleryItems = [
-  { image: '/images/1-copy-1.webp', title: 'Dental Implants', country: 'GB' },
-  { image: '/images/2-copy-1 (1).webp', title: 'Dental Veneers', country: 'AU' },
-  { image: '/images/3-copy-1 (1).webp', title: 'Smile Designs', country: 'GB' },
-  { image: '/images/4-copy-1.webp', title: 'Dental Zirconium', country: 'TR' },
-  { image: '/images/5-1.webp', title: 'Smile Makeover', country: 'US' },
-  { image: '/images/6-1.webp', title: 'Hollywood Smile', country: 'AU' },
+  { image: '/images/1-copy-1.webp', titleKey: 'dentalImplants', country: 'GB' },
+  { image: '/images/2-copy-1 (1).webp', titleKey: 'dentalVeneers', country: 'AU' },
+  { image: '/images/3-copy-1 (1).webp', titleKey: 'smileDesigns', country: 'GB' },
+  { image: '/images/4-copy-1.webp', titleKey: 'dentalZirconium', country: 'TR' },
+  { image: '/images/5-1.webp', titleKey: 'smileMakeover', country: 'US' },
+  { image: '/images/6-1.webp', titleKey: 'hollywoodSmile', country: 'AU' },
 ];
 
-const countryFlags: Record<string, string> = {
-  GB: '🇬🇧',
-  AU: '🇦🇺',
-  US: '🇺🇸',
-  TR: '🇹🇷',
+const countryFlags: Record<string, { code: string; name: string }> = {
+  GB: { code: 'gb', name: 'United Kingdom' },
+  AU: { code: 'au', name: 'Australia' },
+  US: { code: 'us', name: 'United States' },
+  TR: { code: 'tr', name: 'Turkey' },
 };
 
+function FlagIcon({ country }: { country: string }) {
+  const flag = countryFlags[country];
+  if (!flag) return null;
+
+  return (
+    <img
+      src={`https://flagcdn.com/24x18/${flag.code}.png`}
+      srcSet={`https://flagcdn.com/48x36/${flag.code}.png 2x`}
+      width="24"
+      height="18"
+      alt={flag.name}
+      className="inline-block rounded-sm"
+    />
+  );
+}
+
 export default function BeforeAfterGallery() {
+  const { t } = useTranslations('beforeAfter');
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: 'start', slidesToScroll: 1 },
     [Autoplay({ delay: 4000, stopOnInteraction: false })]
@@ -76,14 +94,14 @@ export default function BeforeAfterGallery() {
                 <div className="relative rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-300">
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={t(item.titleKey)}
                     className="w-full aspect-square object-cover"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-primary py-3 px-4 flex items-center justify-between">
                     <span className="text-white font-medium text-sm">
-                      {item.title}
+                      {t(item.titleKey)}
                     </span>
-                    <span className="text-xl">{countryFlags[item.country]}</span>
+                    <FlagIcon country={item.country} />
                   </div>
                 </div>
               </motion.div>
@@ -96,7 +114,7 @@ export default function BeforeAfterGallery() {
           <button
             onClick={scrollPrev}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-gray-100 transition-colors"
-            aria-label="Previous slide"
+            aria-label={t('previousSlide')}
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -110,7 +128,7 @@ export default function BeforeAfterGallery() {
                   ? 'bg-secondary'
                   : 'bg-gray-300 hover:bg-gray-400'
                   }`}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={`${t('goToSlide')} ${index + 1}`}
               />
             ))}
           </div>
@@ -118,7 +136,7 @@ export default function BeforeAfterGallery() {
           <button
             onClick={scrollNext}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-gray-100 transition-colors"
-            aria-label="Next slide"
+            aria-label={t('nextSlide')}
           >
             <ChevronRight className="w-5 h-5" />
           </button>
@@ -127,3 +145,4 @@ export default function BeforeAfterGallery() {
     </section>
   );
 }
+

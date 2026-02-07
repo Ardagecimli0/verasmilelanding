@@ -1,0 +1,186 @@
+{
+    "header": {
+        "nav": {
+            "home": "Ana Sayfa",
+            "whyUs": "Neden Biz",
+            "beforeAfter": "Öncesi & Sonrası",
+            "ourDoctors": "Doktorlarımız",
+            "testimonials": "Referanslar",
+            "faq": "SSS"
+        }
+    },
+    "hero": {
+        "titlePrimary": "%70'e Varan Tasarruf",
+        "titleSecondary": "Mükemmel Gülüşünüz için Türkiye'de!",
+        "ctaButton": "Ücretsiz Danışmanlık Al",
+        "imageAlt": "Mükemmel gülüşlü mutlu çift"
+    },
+    "servicesBar": {
+        "implants": "İmplantlar",
+        "veneers": "Veneerler",
+        "smileDesign": "Gülüş Tasarımı",
+        "crowns": "Kronlar"
+    },
+    "features": {
+        "title": "Hepsi Bir Arada",
+        "titleLine2": "Diş Çözümünüz",
+        "dentalTreatmentGuarantee": "Diş Tedavisi Garantisi",
+        "premiumQualityDentalCare": "Premium Kaliteli Diş Bakımı",
+        "expertConsultations": "Uzman Danışmanlık",
+        "vipTransferServices": "VIP Transfer Hizmetleri",
+        "luxuryHotelStay": "5 Yıldızlı Lüks Otel Konaklaması"
+    },
+    "contactForm": {
+        "title": "Gülüşünüzü",
+        "titleLine2": "VeraSmile ile Şekillendirin",
+        "fullNameLabel": "Ad Soyad",
+        "emailLabel": "E-posta",
+        "phoneLabel": "Telefon numarası",
+        "messageLabel": "Mesaj",
+        "submitButton": "Gönder",
+        "submitting": "Gönderiliyor...",
+        "submitted": "Gönderildi!"
+    },
+    "whyChoose": {
+        "title": "VeraSmile'ı Neden Tercih Etmelisiniz!",
+        "modernClinic": "Modern Klinik",
+        "europeanAmericanBrands": "Avrupa &\nAmerikan\nMalzeme Markaları",
+        "noWaitingLine": "Bekleme\nYok",
+        "awardsCertificates": "Ödüller\nISO / Sertifikalar",
+        "globalPatientsSatisfaction": "Dünya Genelinde\n%99 Memnuniyet\nOranı",
+        "experiencedDoctors": "Deneyimli\nDoktorlar",
+        "guaranteeProgram": "Garanti\nProgramı\n(5Y Veneer/Kron\n20Y İmplant)",
+        "ctaButton": "Ücretsiz Danışmanlık Al"
+    },
+    "beforeAfter": {
+        "dentalImplants": "Diş İmplantları",
+        "dentalVeneers": "Diş Veneerleri",
+        "smileDesigns": "Gülüş Tasarımları",
+        "dentalZirconium": "Diş Zirkonyum",
+        "smileMakeover": "Gülüş Yenileme",
+        "hollywoodSmile": "Hollywood Gülüşü",
+        "previousSlide": "Önceki slayt",
+        "nextSlide": "Sonraki slayt",
+        "goToSlide": "Slayta git"
+    },
+    "doctors": {
+        "title": "Uzman Diş Hekimimiz",
+        "drMumin": {
+            "name": "Dt. Mümin Manassra",
+            "description": "2017 yılında Atatürk Üniversitesi'nden mezun olan Dr. Manassra, yedi yıllık uzmanlığa sahip son derece yetenekli bir diş hekimidir.\n\nTürkiye'nin en iyi diş hekimleri arasında tanınan Dt. Manassra, hastalarının olağanüstü diş bakımı ve yüksek memnuniyet seviyesi almalarını sağlar."
+        },
+        "drNurlan": {
+            "name": "Dt. Nurlan Gasimov",
+            "description": "2011 yılında Azerbaycan Tıp Üniversitesi Diş Hekimliği Fakültesi'nden mezun olan Dt. Nurlan Gasimov, 12 yıllık profesyonel deneyime sahiptir.\n\nBakü'de uzman olarak çalıştıktan sonra 2017'de Türkiye'ye gelmiş ve o zamandan beri burada çalışmaktadır."
+        }
+    },
+    "clinicShowcase": {
+        "clinicAlt": "VeraSmile Kliniği"
+    },
+    "testimonials": {
+        "title": "Hastalarımız Bizim Hakkımızda Ne Diyor",
+        "previousTestimonial": "Önceki referans",
+        "nextTestimonial": "Sonraki referans",
+        "goToTestimonial": "Referansa git",
+        "readyToGetStarted": "Başlamaya Hazır mısınız?",
+        "ctaButton": "Ücretsiz Danışmanlık Al",
+        "quotes": {
+            "sarahJ": "Saklanmaktan parlak gülümsemeye.",
+            "michaelK": "Şimdiye kadar yaşadığım en iyi diş deneyimi. Kesinlikle tavsiye ederim!",
+            "alberto": "Pahalı diş bakımına elveda!"
+        },
+        "locations": {
+            "fromUK": "İngiltere'den",
+            "fromGermany": "Almanya'dan",
+            "fromUSA": "ABD'den"
+        }
+    },
+    "hotel": {
+        "titleLine1": "Yurt Dışında Diş Tedavisi",
+        "titleLine2": "Almak Büyük Bir Karar!",
+        "subtitleLine1": "Türkiye'nin En Lüks",
+        "subtitleLine2": "Otelinde Kalın!",
+        "description1": "Yurt dışında diş tedavisi düşünürken endişe duymak normaldir, ancak VeraSmile Kliniği'nin profesyonel ve özenli tıbbi ekibiyle güvenli ellerde olduğunuzu bilin!",
+        "description2": "Dünya standartlarında diş bakımı, ev gibi hissettiren lüks konaklama ve her adımda konforunuzu sağlayan özel bir ekiple kusursuz bir deneyim yaşayın.",
+        "callToAction": "Hayalinizdeki gülüşü, güzel İstanbul'un kalbinde stressiz bir şekilde gerçeğe dönüştürelim!",
+        "hotelName": "Istanbul MILORD",
+        "hotelLabel": "Otel",
+        "safeTourism": "GÜVENLİ",
+        "tourism": "TURİZM",
+        "imageAlt": "Elite World Grand Hotel İstanbul"
+    },
+    "cta": {
+        "title": "Başlamaya Hazır mısınız?",
+        "subtitle": "Özgüvenli Bir Gülüşün Gücünü Keşfedin!",
+        "button": "Yolculuğumu Planla!"
+    },
+    "faq": {
+        "title": "Sıkça Sorulan Sorular",
+        "clinicImageAlt": "Vera Klinik Dış Görünüm",
+        "questions": {
+            "whyChooseVerasmile": {
+                "question": "Neden VeraSmile'ı Tercih Etmeliyim?",
+                "answer": "VeraSmile'da hasta konforu ve memnuniyeti ilk sıradadır. Modern kliniğimiz son teknoloji ve kişiselleştirilmiş tedaviler sunar. 8'den fazla dilde akıcı uzman uluslararası danışmanlarımızla sorunsuz iletişim sağlıyoruz. Stressiz bir deneyim için seyahat, konaklama ve havalimanı transferlerinde de yardımcı oluyoruz, böylece hastalar randevular arasında tam destekle İstanbul'u keşfedebilir."
+            },
+            "whyCheaperInTurkey": {
+                "question": "Türkiye'de Diş Tedavileri Neden Daha Ucuz?",
+                "answer": "Düşük maliyetler, uygun döviz kurları ve Türkiye'nin düşük yaşam maliyetinden kaynaklanmaktadır. Yabancı hastalar, uluslararası ziyaretçilere yönelik tıbbi hizmetler KDV'den muaf olduğu için önemli tasarruflardan yararlanır. Bu, Avrupa ve ABD'de bulunan fiyatların çok altında yüksek kaliteli bakım sağlar."
+            },
+            "whyDentalCrowns": {
+                "question": "Türkiye'de Neden Diş Kronu Yaptırmalıyım?",
+                "answer": "Türkiye, uygun fiyatlarla dünya standartlarında diş kronları sunmaktadır. Kliniklerimiz, dayanıklılık ve estetik sağlayan Avrupa ve Amerikan markalarından premium malzemeler kullanır. Deneyimli diş hekimleri ve modern tesislerle, Batılı ülkelerdeki ile aynı kaliteyi çok daha düşük maliyetle alırsınız."
+            },
+            "hollywoodSmileProcess": {
+                "question": "Hollywood Gülüşü Süreci Nasıl İşliyor?",
+                "answer": "Yolculuğunuz, ideal gülüşünüzü tasarlamak ve herhangi bir diş sorununu ele almak için bir danışmanlıkla başlar. Kozmetik çalışmaya başlamadan önce altta yatan sorunları çözüyoruz. Uzman ekibimiz, kusursuz ve doğal görünümlü bir sonuç sağlayarak her planı özelleştirir."
+            },
+            "lowerCostLowerQuality": {
+                "question": "Düşük Maliyet Veneerler için Düşük Kalite mi Demek?",
+                "answer": "Hayır. Türkiye'deki düşük fiyatlar kaliteden ödün vermez. Malzemeler, teknoloji ve uzmanlık ABD, İngiltere ve Avrupa'dakilerle eşleşir ve uygun fiyatlarla premium veneerler sağlar."
+            },
+            "allOnFourCandidate": {
+                "question": "All-on-4 İmplantlar için Aday mıyım?",
+                "answer": "Çoğu hasta, geleneksel implantlar için uygun olmayanlar bile, adaydır. Tüm dişler bir kerede değiştirildiğinden, implantlar kemiğin en güçlü olduğu yere yerleştirilir. Çenenizde dört güçlü kemik bölgesi varsa, adaysınız!"
+            }
+        }
+    },
+    "footer": {
+        "contactUs": "Bize Ulaşın",
+        "address": "Mecidiyeköy Mahallesi, Büyükdere Cd. Ocak Apt No:91 Kat 2 Daire:2, 34387 Şişli/İstanbul",
+        "phone": "+90 549 475 52 87",
+        "email": "info@verasmile.com",
+        "copyright": "Copyright@2026 VeraSmile",
+        "logoAlt": "VeraSmile Logo"
+    },
+    "whatsapp": {
+        "companyName": "VeraSmile",
+        "online": "Çevrimiçi",
+        "welcomeMessage": "VeraSmile Kliniği'ne hoş geldiniz! 😊",
+        "questionsMessage": "Hizmetlerimiz, paketlerimiz veya nasıl başlayacağınız hakkında sorularınız mı var?",
+        "hereToHelp": "Size yardımcı olmak için buradayız",
+        "sendMessage": "bize mesaj gönderin!",
+        "copyright": "© 2025 VeraSmile"
+    },
+    "countries": {
+        "TR": "Türkiye",
+        "US": "Amerika Birleşik Devletleri",
+        "GB": "Birleşik Krallık",
+        "DE": "Almanya",
+        "FR": "Fransa",
+        "IT": "İtalya",
+        "ES": "İspanya",
+        "NL": "Hollanda",
+        "BE": "Belçika",
+        "CH": "İsviçre",
+        "AT": "Avusturya",
+        "SE": "İsveç",
+        "NO": "Norveç",
+        "DK": "Danimarka",
+        "FI": "Finlandiya",
+        "AU": "Avustralya",
+        "CA": "Kanada",
+        "RU": "Rusya",
+        "UA": "Ukrayna",
+        "PL": "Polonya"
+    }
+}

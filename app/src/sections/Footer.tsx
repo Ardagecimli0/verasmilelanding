@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { useTranslations } from '@/i18n';
 
 export default function Footer() {
+  const { t } = useTranslations('footer');
+
   return (
     <footer className="bg-secondary py-12">
       <div className="container mx-auto px-4">
@@ -16,28 +19,28 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <img
               src="/images/footer.svg"
-              alt="VeraSmile Logo"
+              alt={t('logoAlt')}
               className="h-16 md:h-20 w-auto"
             />
           </div>
 
           {/* Contact Info */}
           <div className="text-center md:text-right">
-            <h4 className="text-white font-semibold mb-4">Contact Us</h4>
+            <h4 className="text-white font-semibold mb-4">{t('contactUs')}</h4>
             <div className="space-y-3">
               <div className="flex items-center justify-center md:justify-end gap-2 text-gray-300">
                 <MapPin className="w-4 h-4 text-primary shrink-0" />
                 <span className="text-sm">
-                  Mecidiyeköy Mahallesi, Büyükdere Cd. Ocak Apt No:91 Kat 2 Daire:2, 34387 Şişli/İstanbul
+                  {t('address')}
                 </span>
               </div>
               <div className="flex items-center justify-center md:justify-end gap-2 text-gray-300">
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="text-sm">+90 549 475 52 87</span>
+                <span className="text-sm">{t('phone')}</span>
               </div>
               <div className="flex items-center justify-center md:justify-end gap-2 text-gray-300">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-sm">info@verasmile.com</span>
+                <span className="text-sm">{t('email')}</span>
               </div>
             </div>
           </div>
@@ -52,10 +55,11 @@ export default function Footer() {
           className="mt-10 pt-6 border-t border-white/10 text-center"
         >
           <p className="text-gray-400 text-sm">
-            Copyright@2026 VeraSmile
+            {t('copyright')}
           </p>
         </motion.div>
       </div>
     </footer>
   );
 }
+

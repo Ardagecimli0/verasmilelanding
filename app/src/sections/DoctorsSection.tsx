@@ -1,17 +1,16 @@
 import { motion } from 'framer-motion';
+import { useTranslations } from '@/i18n';
 
-const doctors = [
+const doctorKeys = [
   {
     image: '/images/dr-mumin-1.webp',
-    name: 'Dt. Mümin Manassra',
-    description:
-      'Dr. Manassra, a 2017 graduate of Atatürk University, is a highly skilled dentist with seven years of expertise.\n\nRecognized among Turkey\'s top dentists, Dt. Manassra ensures that his patients receive exceptional dental care and high levels of satisfaction.',
+    nameKey: 'drMumin.name',
+    descriptionKey: 'drMumin.description',
   },
   {
     image: '/images/dr-nurlan-copy-1.webp',
-    name: 'Dt. Nurlan Gasimov',
-    description:
-      'Dt. Nurlan Gasimov who graduated from Azerbaijan Medical University, Faculty of Dentistry in 2011, has 12 years of professional experience.\n\nAfter working as a specialist in Baku, he travelled to Turkey in 2017 and has been practicing here ever since.',
+    nameKey: 'drNurlan.name',
+    descriptionKey: 'drNurlan.description',
   },
 ];
 
@@ -38,6 +37,8 @@ const itemVariants = {
 };
 
 export default function DoctorsSection() {
+  const { t } = useTranslations('doctors');
+
   return (
     <section id="doctors" className="bg-primary-light py-12">
       <div className="container mx-auto px-4">
@@ -48,7 +49,7 @@ export default function DoctorsSection() {
           transition={{ duration: 0.5 }}
           className="text-2xl md:text-3xl font-bold text-secondary text-center mb-10"
         >
-          Our Expert Dentist
+          {t('title')}
         </motion.h2>
 
         <motion.div
@@ -58,9 +59,9 @@ export default function DoctorsSection() {
           viewport={{ once: true, margin: '-50px' }}
           className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"
         >
-          {doctors.map((doctor) => (
+          {doctorKeys.map((doctor) => (
             <motion.div
-              key={doctor.name}
+              key={doctor.nameKey}
               variants={itemVariants}
               whileHover={{ y: -8 }}
               className="bg-white border border-primary rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
@@ -68,18 +69,18 @@ export default function DoctorsSection() {
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src={doctor.image}
-                  alt={doctor.name}
+                  alt={t(doctor.nameKey)}
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="bg-primary py-3 px-4">
                 <h3 className="text-white font-semibold text-center text-lg">
-                  {doctor.name}
+                  {t(doctor.nameKey)}
                 </h3>
               </div>
               <div className="p-6">
                 <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line text-center">
-                  {doctor.description}
+                  {t(doctor.descriptionKey)}
                 </p>
               </div>
             </motion.div>
@@ -89,3 +90,4 @@ export default function DoctorsSection() {
     </section>
   );
 }
+

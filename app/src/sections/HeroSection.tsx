@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslations } from '@/i18n';
 
 export default function HeroSection() {
-
+  const { t } = useTranslations('hero');
 
   return (
     <section id="home" className="container mx-auto px-4 pt-6">
@@ -26,8 +27,8 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-center lg:text-left"
             >
-              <span className="text-primary block md:inline">Save Up to 70%</span>{' '}
-              <span className="text-secondary block md:inline">on Your Perfect Smile in Turkey!</span>
+              <span className="text-primary block md:inline">{t('titlePrimary')}</span>{' '}
+              <span className="text-secondary block md:inline">{t('titleSecondary')}</span>
             </motion.h1>
 
             <motion.div
@@ -36,11 +37,11 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <Button
-                onClick={() => window.open('https://api.whatsapp.com/send?phone=905494755287&text=What are the options and pricing for dental treatment', '_blank')}
+                onClick={() => window.open('https://api.whatsapp.com/send/?phone=15557531839&text=Hello%2C+I%E2%80%99m+interested+in+learning+more+about+your+dental+treatments.+%0D%0ACould+you+please+provide+me+with+more+information%3F+%0D%0AThank+you%21&type=phone_number&app_absent=0', '_blank')}
                 className="bg-secondary hover:bg-secondary-dark text-white px-6 py-6 rounded-lg text-base font-medium group transition-all duration-200"
               >
                 <ChevronRight className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />
-                Get A Free Consultation
+                {t('ctaButton')}
               </Button>
             </motion.div>
 
@@ -89,7 +90,7 @@ export default function HeroSection() {
           >
             <img
               src="/images/hero-couple.png"
-              alt="Happy couple with perfect smiles"
+              alt={t('imageAlt')}
               className="w-full max-w-md lg:max-w-lg object-contain"
             />
           </motion.div>
@@ -98,3 +99,4 @@ export default function HeroSection() {
     </section>
   );
 }
+

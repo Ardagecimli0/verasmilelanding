@@ -4,38 +4,40 @@ import { ChevronRight, ChevronLeft, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import { useTranslations } from '@/i18n';
 
 const testimonials = [
   {
     image: '/images/testimonial-shorts-1.png',
     videoId: 'JTN9W_dHwKg',
-    quote: 'From hiding to smiling brightly.',
+    quoteKey: 'quotes.sarahJ',
     name: 'Sarah J.',
-    location: 'from UK',
+    locationKey: 'locations.fromUK',
   },
   {
     image: '/images/testimonial-shorts-2.png',
     videoId: '3j3nvvEm9c8',
-    quote: 'The best dental experience I\'ve ever had. Highly recommended!',
+    quoteKey: 'quotes.michaelK',
     name: 'Michael K.',
-    location: 'from Germany',
+    locationKey: 'locations.fromGermany',
   },
   {
     image: '/images/testimonial-shorts-3.png',
     videoId: '5PgnNsTeSKM',
-    quote: 'Goodbye expensive dental care!',
+    quoteKey: 'quotes.alberto',
     name: 'Alberto',
-    location: 'from USA',
+    locationKey: 'locations.fromUSA',
   },
 ];
 
 export default function TestimonialsSection() {
+  const { t } = useTranslations('testimonials');
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: 'center' },
     [Autoplay({ delay: 5000, stopOnInteraction: false })]
   );
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+  const [activeVideo, setActiveVideo] = useState < string | null > (null);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -85,7 +87,7 @@ export default function TestimonialsSection() {
             transition={{ duration: 0.5 }}
             className="text-2xl md:text-3xl font-bold text-white text-center mb-10"
           >
-            What Our Patients Say About Us
+            {t('title')}
           </motion.h2>
 
           {/* Mobile: Carousel - One large card at a time */}
@@ -132,7 +134,7 @@ export default function TestimonialsSection() {
               <button
                 onClick={scrollPrev}
                 className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
-                aria-label="Previous testimonial"
+                aria-label={t('previousTestimonial')}
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
@@ -146,7 +148,7 @@ export default function TestimonialsSection() {
                       ? 'bg-white'
                       : 'bg-white/40 hover:bg-white/60'
                       }`}
-                    aria-label={`Go to testimonial ${index + 1}`}
+                    aria-label={`${t('goToTestimonial')} ${index + 1}`}
                   />
                 ))}
               </div>
@@ -154,7 +156,7 @@ export default function TestimonialsSection() {
               <button
                 onClick={scrollNext}
                 className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
-                aria-label="Next testimonial"
+                aria-label={t('nextTestimonial')}
               >
                 <ChevronRight className="w-5 h-5" />
               </button>
@@ -201,14 +203,14 @@ export default function TestimonialsSection() {
             className="flex flex-col items-center mt-8 space-y-4"
           >
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center">
-              Ready To Get Started?
+              {t('readyToGetStarted')}
             </h3>
             <Button
-              onClick={() => window.open('https://api.whatsapp.com/send?phone=905494755287&text=What are the options and pricing for dental treatment', '_blank')}
+              onClick={() => window.open('https://api.whatsapp.com/send/?phone=15557531839&text=Hello%2C+I%E2%80%99m+interested+in+learning+more+about+your+dental+treatments.+%0D%0ACould+you+please+provide+me+with+more+information%3F+%0D%0AThank+you%21&type=phone_number&app_absent=0', '_blank')}
               className="bg-secondary hover:bg-secondary-dark text-white px-6 py-3 rounded-lg font-medium group transition-all duration-200"
             >
               <ChevronRight className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />
-              Get A Free Consultation
+              {t('ctaButton')}
             </Button>
           </motion.div>
         </div>
@@ -250,3 +252,4 @@ export default function TestimonialsSection() {
     </>
   );
 }
+

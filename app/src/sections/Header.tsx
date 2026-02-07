@@ -2,18 +2,20 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { useTranslations } from '@/i18n';
 
 const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Before & After', href: '#before-after' },
-  { label: 'Our Doctors', href: '#doctors' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'FAQ', href: '#faq' },
+  { labelKey: 'home', href: '#home' },
+  { labelKey: 'whyUs', href: '#why-us' },
+  { labelKey: 'beforeAfter', href: '#before-after' },
+  { labelKey: 'ourDoctors', href: '#doctors' },
+  { labelKey: 'testimonials', href: '#testimonials' },
+  { labelKey: 'faq', href: '#faq' },
 ];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslations('header.nav');
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -50,7 +52,7 @@ export default function Header() {
                 onClick={() => scrollToSection(item.href)}
                 className="relative text-sm font-semibold text-gray-700 hover:text-primary transition-colors duration-200 group"
               >
-                {item.label}
+                {t(item.labelKey)}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full" />
               </button>
             ))}
@@ -71,7 +73,7 @@ export default function Header() {
                     onClick={() => scrollToSection(item.href)}
                     className="text-lg font-semibold text-gray-700 hover:text-primary transition-colors text-left"
                   >
-                    {item.label}
+                    {t(item.labelKey)}
                   </button>
                 ))}
               </div>
@@ -82,3 +84,4 @@ export default function Header() {
     </motion.header>
   );
 }
+

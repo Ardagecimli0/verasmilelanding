@@ -1,0 +1,108 @@
+{
+    "header": {
+        "nav": {
+            "home": "Startseite",
+            "whyUs": "Warum wir",
+            "beforeAfter": "Vorher & Nachher",
+            "ourDoctors": "Unsere Ärzte",
+            "testimonials": "Bewertungen",
+            "faq": "FAQ"
+        }
+    },
+    "hero": {
+        "titlePrimary": "Sparen Sie bis zu 70%",
+        "titleSecondary": "auf Ihr perfektes Lächeln in der Türkei!",
+        "ctaButton": "Kostenlose Beratung erhalten",
+        "imageAlt": "Glückliches Paar mit perfektem Lächeln"
+    },
+    "servicesBar": {
+        "implants": "Implantate",
+        "veneers": "Veneers",
+        "smileDesign": "Smile Design",
+        "crowns": "Kronen"
+    },
+    "features": {
+        "title": "Ihre All-in-One",
+        "titleLine2": "Zahnmedizinische Lösung",
+        "dentalTreatmentGuarantee": "Garantie auf Zahnbehandlungen",
+        "premiumQualityDentalCare": "Erstklassige Zahnpflege",
+        "expertConsultations": "Expertenberatung",
+        "vipTransferServices": "VIP-Transfer-Service",
+        "luxuryHotelStay": "5-Sterne Luxushotel"
+    },
+    "contactForm": {
+        "title": "Gestalten Sie Ihr Lächeln",
+        "titleLine2": "mit VeraSmile",
+        "fullNameLabel": "Vollständiger Name",
+        "emailLabel": "E-Mail",
+        "phoneLabel": "Telefonnummer",
+        "messageLabel": "Nachricht",
+        "submitButton": "Absenden",
+        "submitting": "Wird gesendet...",
+        "submitted": "Gesendet!"
+    },
+    "whyChoose": {
+        "title": "Darum sollten Sie VeraSmile wählen!",
+        "modernClinic": "Moderne Klinik",
+        "europeanAmericanBrands": "Europäische &\namerikanische\nMaterialmarken",
+        "noWaitingLine": "Keine\nWarteschlangen",
+        "awardsCertificates": "Auszeichnungen\nISO-Zertifikate",
+        "globalPatientsSatisfaction": "Weltweite Patienten\nmit 99% Zufriedenheit",
+        "experiencedDoctors": "Erfahrene\nÄrzte",
+        "guaranteeProgram": "Garantieprogramm\n(5J Veneers/Kronen\n20J Implantate)",
+        "ctaButton": "Kostenlose Beratung"
+    },
+    "beforeAfter": {
+        "dentalImplants": "Zahnimplantate",
+        "dentalVeneers": "Veneers",
+        "smileDesigns": "Smile Designs",
+        "dentalZirconium": "Zirkon-Zahnersatz",
+        "smileMakeover": "Smile Makeover",
+        "hollywoodSmile": "Hollywood Lächeln"
+    },
+    "testimonials": {
+        "title": "Was unsere Patienten über uns sagen",
+        "quotes": {
+            "sarahJ": "Vom Verstecken zum strahlenden Lächeln.",
+            "michaelK": "Die beste zahnärztliche Erfahrung. Sehr empfehlenswert!",
+            "alberto": "Auf Wiedersehen, teure Zahnbehandlungen!"
+        },
+        "locations": {
+            "fromGermany": "aus Deutschland"
+        }
+    },
+    "hotel": {
+        "titleLine1": "Eine Zahnbehandlung",
+        "titleLine2": "im Ausland ist eine große Entscheidung!",
+        "subtitleLine1": "Übernachten Sie im luxuriösesten",
+        "subtitleLine2": "Hotel der Türkei!",
+        "hotelLabel": "Hotel",
+        "safeTourism": "SICHERER",
+        "tourism": "TOURISMUS"
+    },
+    "faq": {
+        "title": "Häufig gestellte Fragen",
+        "questions": {
+            "whyChooseVerasmile": {
+                "question": "Warum VeraSmile wählen?",
+                "answer": "Bei VeraSmile stehen Komfort und Zufriedenheit der Patienten an erster Stelle. Unsere Klinik bietet modernste Technologie."
+            },
+            "whyCheaperInTurkey": {
+                "question": "Warum sind Zahnbehandlungen in der Türkei günstiger?",
+                "answer": "Günstigere Kosten ergeben sich aus günstigen Wechselkursen und niedrigeren Lebenshaltungskosten in der Türkei."
+            }
+        }
+    },
+    "footer": {
+        "contactUs": "Kontaktieren Sie uns",
+        "copyright": "Copyright@2026 VeraSmile"
+    },
+    "whatsapp": {
+        "welcomeMessage": "Willkommen bei der VeraSmile Klinik! 😊"
+    },
+    "countries": {
+        "DE": "Deutschland",
+        "AT": "Österreich",
+        "CH": "Schweiz"
+    }
+}

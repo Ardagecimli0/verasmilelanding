@@ -1,0 +1,90 @@
+{
+    "header": {
+        "nav": {
+            "home": "Inicio",
+            "whyUs": "Por qué nosotros",
+            "beforeAfter": "Antes y Después",
+            "ourDoctors": "Nuestros Doctores",
+            "testimonials": "Testimonios",
+            "faq": "Preguntas Frecuentes"
+        }
+    },
+    "hero": {
+        "titlePrimary": "Ahorra hasta un 70%",
+        "titleSecondary": "en tu sonrisa perfecta en Turquía",
+        "ctaButton": "Obtén una consulta gratuita",
+        "imageAlt": "Pareja feliz con sonrisas perfectas"
+    },
+    "servicesBar": {
+        "implants": "Implantes",
+        "veneers": "Carillas",
+        "smileDesign": "Diseño de Sonrisa",
+        "crowns": "Coronas"
+    },
+    "features": {
+        "title": "Tu Solución Dental",
+        "titleLine2": "Todo en Uno",
+        "dentalTreatmentGuarantee": "Garantía de tratamiento dental",
+        "premiumQualityDentalCare": "Atención dental de calidad superior",
+        "expertConsultations": "Consultas expertas",
+        "vipTransferServices": "Servicios de traslado VIP",
+        "luxuryHotelStay": "Estancia en hotel de 5 estrellas"
+    },
+    "contactForm": {
+        "title": "Diseña tu sonrisa",
+        "titleLine2": "con VeraSmile",
+        "fullNameLabel": "Nombre completo",
+        "emailLabel": "Correo electrónico",
+        "phoneLabel": "Número de teléfono",
+        "messageLabel": "Mensaje",
+        "submitButton": "Enviar",
+        "submitting": "Enviando...",
+        "submitted": "¡Enviado!"
+    },
+    "whyChoose": {
+        "title": "¡Por esto deberías elegir VeraSmile!",
+        "modernClinic": "Clínica Moderna",
+        "europeanAmericanBrands": "Marcas europeas\ny americanas",
+        "noWaitingLine": "Sin listas\nde espera",
+        "awardsCertificates": "Premios\nCertificados ISO",
+        "globalPatientsSatisfaction": "99% de satisfacción\nde pacientes globales",
+        "experiencedDoctors": "Doctores\nExpertos",
+        "guaranteeProgram": "Programa de garantía\n(5 años carillas\n20 años implantes)",
+        "ctaButton": "Consulta Gratuita"
+    },
+    "beforeAfter": {
+        "dentalImplants": "Implantes Dentales",
+        "dentalVeneers": "Carillas Dentales",
+        "smileDesigns": "Diseño de Sonrisa",
+        "hollywoodSmile": "Sonrisa Hollywood"
+    },
+    "testimonials": {
+        "title": "Lo que dicen nuestros pacientes",
+        "quotes": {
+            "sarahJ": "De esconderme a sonreír con confianza.",
+            "michaelK": "La mejor experiencia dental que he tenido.",
+            "alberto": "¡Adiós al cuidado dental costoso!"
+        }
+    },
+    "hotel": {
+        "titleLine1": "Tratamiento dental",
+        "titleLine2": "en el extranjero",
+        "safeTourism": "TURISMO",
+        "tourism": "SEGURO"
+    },
+    "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": {
+            "whyChooseVerasmile": {
+                "question": "¿Por qué elegir VeraSmile?",
+                "answer": "En VeraSmile, la comodidad y satisfacción del paciente son lo primero. Ofrecemos tecnología de vanguardia."
+            }
+        }
+    },
+    "countries": {
+        "ES": "España",
+        "MX": "México",
+        "AR": "Argentina",
+        "CO": "Colombia"
+    }
+}

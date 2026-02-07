@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
 import { Building2, FlaskConical, Clock, Award, Users, Stethoscope, ShieldCheck, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslations } from '@/i18n';
 
-const features = [
-  { icon: Building2, title: 'Modern Clinic' },
-  { icon: FlaskConical, title: 'European &\nAmerican\nMaterial Brands' },
-  { icon: Clock, title: 'No Waiting\nLine' },
-  { icon: Award, title: 'Awards\nISO / Certificates' },
-  { icon: Users, title: 'Global Patients\nwith 99%\nSatisfaction Rate' },
-  { icon: Stethoscope, title: 'Experienced\nDoctors' },
-  { icon: ShieldCheck, title: 'Guarantee\nProgram\n(5Y Veneers/Crowns\n20Y Implants)' },
+const featureKeys = [
+  { icon: Building2, titleKey: 'modernClinic' },
+  { icon: FlaskConical, titleKey: 'europeanAmericanBrands' },
+  { icon: Clock, titleKey: 'noWaitingLine' },
+  { icon: Award, titleKey: 'awardsCertificates' },
+  { icon: Users, titleKey: 'globalPatientsSatisfaction' },
+  { icon: Stethoscope, titleKey: 'experiencedDoctors' },
+  { icon: ShieldCheck, titleKey: 'guaranteeProgram' },
 ];
 
 const containerVariants = {
@@ -35,7 +36,7 @@ const itemVariants = {
 };
 
 export default function WhyChooseSection() {
-
+  const { t } = useTranslations('whyChoose');
 
   return (
     <section id="why-us" className="container mx-auto px-4 py-12">
@@ -47,7 +48,7 @@ export default function WhyChooseSection() {
         className="bg-secondary rounded-3xl p-6 md:p-12"
       >
         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-10">
-          Here's Why You Should Choose VeraSmile!
+          {t('title')}
         </h2>
 
         {/* Mobile: 2 columns, Desktop: 7 columns */}
@@ -58,12 +59,12 @@ export default function WhyChooseSection() {
           viewport={{ once: true }}
           className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 md:gap-6 mb-10"
         >
-          {features.map((feature, index) => {
+          {featureKeys.map((feature, index) => {
             const Icon = feature.icon;
-            const isGuarantee = index === features.length - 1;
+            const isGuarantee = index === featureKeys.length - 1;
             return (
               <motion.div
-                key={feature.title}
+                key={feature.titleKey}
                 variants={itemVariants}
                 whileHover={{ scale: 1.05 }}
                 className={`flex flex-col items-center text-center cursor-default ${isGuarantee ? 'col-span-2 md:col-span-1' : ''
@@ -74,7 +75,7 @@ export default function WhyChooseSection() {
                 </div>
                 <p className={`text-white whitespace-pre-line leading-tight ${isGuarantee ? 'text-xs md:text-xs max-w-[140px] md:max-w-none' : 'text-sm md:text-xs'
                   }`}>
-                  {feature.title}
+                  {t(feature.titleKey)}
                 </p>
               </motion.div>
             );
@@ -83,14 +84,15 @@ export default function WhyChooseSection() {
 
         <div className="flex justify-center">
           <Button
-            onClick={() => window.open('https://api.whatsapp.com/send?phone=905494755287&text=What are the options and pricing for dental treatment', '_blank')}
+            onClick={() => window.open('https://api.whatsapp.com/send/?phone=15557531839&text=Hello%2C+I%E2%80%99m+interested+in+learning+more+about+your+dental+treatments.+%0D%0ACould+you+please+provide+me+with+more+information%3F+%0D%0AThank+you%21&type=phone_number&app_absent=0', '_blank')}
             className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium group transition-all duration-200"
           >
             <ChevronRight className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />
-            Get A Free Consultation
+            {t('ctaButton')}
           </Button>
         </div>
       </motion.div>
     </section>
   );
 }
+

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslations } from '@/i18n';
 
 const clinicImages = [
   {
@@ -10,6 +11,8 @@ const clinicImages = [
 ];
 
 export default function ClinicShowcase() {
+  const { t } = useTranslations('clinicShowcase');
+
   return (
     <section className="container mx-auto px-4 py-12">
       <motion.div
@@ -34,7 +37,7 @@ export default function ClinicShowcase() {
             <div className="relative">
               <img
                 src={item.image}
-                alt="VeraSmile Clinic"
+                alt={t('clinicAlt')}
                 // Boyutu korumak için aspect-square (kare) yapısı bırakıldı
                 className="w-full aspect-square object-cover"
               />

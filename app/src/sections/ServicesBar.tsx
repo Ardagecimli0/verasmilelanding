@@ -1,8 +1,14 @@
 import { motion } from 'framer-motion';
+import { useTranslations } from '@/i18n';
 
-const services = ['Implants', 'Veneers', 'Smile Design', 'Crowns'];
+const serviceKeys = ['implants', 'veneers', 'smileDesign', 'crowns'];
 
 export default function ServicesBar() {
+  const { t } = useTranslations('servicesBar');
+
+  // Get translated services
+  const services = serviceKeys.map(key => t(key));
+
   // Duplicate services for seamless marquee loop
   const marqueeServices = [...services, ...services];
 
@@ -55,3 +61,4 @@ export default function ServicesBar() {
     </section>
   );
 }
+

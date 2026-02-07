@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import { Shield, Heart, User, Car, Star } from 'lucide-react';
+import { useTranslations } from '@/i18n';
 
-const features = [
-  { icon: Shield, title: 'Dental Treatment Guarantee' },
-  { icon: Heart, title: 'Premium Quality Dental Care' },
-  { icon: User, title: 'Expert Consultations' },
-  { icon: Car, title: 'VIP Transfer Services' },
-  { icon: Star, title: 'A 5-Star Luxury Hotel Stay' },
+const featureKeys = [
+  { icon: Shield, titleKey: 'dentalTreatmentGuarantee' },
+  { icon: Heart, titleKey: 'premiumQualityDentalCare' },
+  { icon: User, titleKey: 'expertConsultations' },
+  { icon: Car, titleKey: 'vipTransferServices' },
+  { icon: Star, titleKey: 'luxuryHotelStay' },
 ];
 
 const containerVariants = {
@@ -32,6 +33,8 @@ const itemVariants = {
 };
 
 export default function FeaturesSection() {
+  const { t } = useTranslations('features');
+
   return (
     <div>
       <motion.h2
@@ -41,9 +44,9 @@ export default function FeaturesSection() {
         transition={{ duration: 0.5 }}
         className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6"
       >
-        Your All-in-One
+        {t('title')}
         <br />
-        Dental Solution
+        {t('titleLine2')}
       </motion.h2>
 
       <motion.div
@@ -53,11 +56,11 @@ export default function FeaturesSection() {
         viewport={{ once: true, margin: '-50px' }}
         className="grid grid-cols-1 md:grid-cols-2 gap-3"
       >
-        {features.map((feature) => {
+        {featureKeys.map((feature) => {
           const Icon = feature.icon;
           return (
             <motion.div
-              key={feature.title}
+              key={feature.titleKey}
               variants={itemVariants}
               whileHover={{ y: -4, boxShadow: '0 8px 30px rgba(0, 0, 0, 0.12)' }}
               className="flex items-center gap-3 p-4 border border-gray-200 rounded-xl bg-white transition-all duration-300 cursor-default"
@@ -66,7 +69,7 @@ export default function FeaturesSection() {
                 <Icon className="w-5 h-5" />
               </div>
               <span className="text-sm font-medium text-gray-700">
-                {feature.title}
+                {t(feature.titleKey)}
               </span>
             </motion.div>
           );
@@ -75,3 +78,4 @@ export default function FeaturesSection() {
     </div>
   );
 }
+
